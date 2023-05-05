@@ -8,6 +8,7 @@ import org.testng.asserts.SoftAssert;
 import pageObjectModel.LoginPageObjects;
 import resources.BaseClass;
 import resources.CommonMethods;
+import resources.Constant;
 
 
 public class VerifyLogIn extends BaseClass {
@@ -18,8 +19,8 @@ public class VerifyLogIn extends BaseClass {
 		  
 		    
 		  LoginPageObjects  LPO=new LoginPageObjects (driver);  
-		  LPO.enterUsername().sendKeys("rahul");  
-		  LPO.enterpassword().sendKeys("123");
+		  LPO.enterUsername().sendKeys(Constant.username);  
+		  LPO.enterpassword().sendKeys(Constant.password);
 		  LPO.clickLogin().click();  
 		  
 		  String actualText=LPO.errorText().getText();
