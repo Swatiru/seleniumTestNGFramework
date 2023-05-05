@@ -22,7 +22,8 @@ public class BaseClass {
 	  
 	  
 	  //This will access the properties file
-	  FileInputStream fis=new FileInputStream("C:\\Users\\swati\\eclipse-workspace\\seleniumTestNG26thjan2023\\src\\main\\java\\resources\\data.properties");
+	  FileInputStream fis=new 
+			  FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 	  
 	  //Read the file-
 	  
