@@ -70,8 +70,8 @@ public class BaseClass {
 	 }
 
 	}
-	 
-	 
+
+// Fixed defect as part of JIRA Story 121
 	 
 
 	
